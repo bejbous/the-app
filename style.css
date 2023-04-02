@@ -1,0 +1,217 @@
+.bigImg {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    box-shadow: 2px 7px 5px -2px gray;
+}
+.bigImg img {
+    width: 600px;
+}
+.smallImg{
+    width: 600px;
+    height: 80px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    transition: margin-left 1s;
+}
+.over{
+    width: 540px;
+    height: 80px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    overflow: hidden;
+}
+.smallImg img{
+    width:75px;
+    border: 5px solid white;
+    box-shadow: 0px 5px 3px -2px gray;
+    margin-right:10px;
+}
+.smallImg img:hover{
+    cursor:pointer;
+    box-shadow: 0px 7px 3px -2px gray;
+}
+
+
+.outlined{
+    outline:white solid 1px;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 3px -2px gray;
+}
+.sipka{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    margin: -10px 0 0 37px;
+}
+.sipkaD{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #544139;
+    position: absolute;
+    margin: -5px 0 0 35px;
+    z-index: 1;
+    visibility: hidden;
+}
+/*.sipkaD:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }*/
+body{
+    background:#bfada5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    margin: 0px;
+    flex-direction: column;
+}
+.nav, .nav1{
+    width: 50px;
+    height: 400px;
+    background: #d4c8c2;
+   
+}
+.nav img, .nav1 img{
+width:25px;
+display:block;
+margin:auto;
+margin-top: 180px;
+}
+.nav1 img{
+    transform: rotateY(180deg);
+    }
+.nav img:hover, .nav1 img:hover {
+        opacity: 0.5;
+        cursor:pointer;
+      }
+.left img, .right img{
+        width:15px;
+        display:block;
+        margin:auto;
+        margin-top: 25px;
+        }   
+ .right img{
+            transform: rotateY(180deg);
+            }
+  .left img:hover, .right img:hover {
+                opacity: 0.5;
+                cursor:pointer;
+              }          
+.popis{
+    position:absolute;
+    bottom:0px;
+    right:50px;
+    width: 600px;
+    height: 100px;
+    background: rgba(84,65,57,0.65);
+    color: rgba(255,255,255,0.85);
+    font-family: 'HeyWow', sans-serif;
+}      
+h1{
+    margin: 10px;
+}
+p {
+    margin: 8px;
+   }
+.hovertext {
+    position: relative;
+  }   
+
+  .hide{
+    display:none;
+    position:fixed;
+    top: -15px;
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+    background-color: #544139;
+    border-radius: 2px;
+    z-index: 1;
+    white-space: nowrap;
+}
+.hovertext:hover .hide {
+display: block;
+
+}
+#left, #right{
+    filter: invert(23%) sepia(46%) saturate(303%) hue-rotate(333deg) brightness(90%) contrast(85%);
+}
+.left{           
+    top:0px;
+    left:0px;
+}
+.right{           
+    top:0px;
+    right:0px;
+}
+.left, .right{
+   /* position:absolute;*/
+    width:30px;
+    height: 80px;
+    background: white;
+    opacity:0.5;
+    z-index: 1;
+    align-items: center; 
+    justify-content: center;
+}
+.wrap{
+    transform: scale(1);
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    position:fixed;
+    bottom: 30px;
+    right:30px;
+    width:40px;
+    height:40px;
+}
+.info img {
+    width: 40px;
+    filter: invert(23%) sepia(46%) saturate(303%) hue-rotate(333deg) brightness(90%) contrast(85%);
+
+}
+.info img:hover{
+    cursor:pointer;
+}
+.popup{
+    visibility:hidden;
+    position: absolute;
+    bottom: 35%;
+    background:#bfada5;
+    border: 3px #544139 solid;
+    width:200px;
+    height:150px;
+    z-index: 1;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+.popin{
+    position:relative;
+    width:200px;
+    height:150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+.close{
+    position:absolute;
+    top:0px;
+    right:0px;
+    cursor:pointer;
+    font-size: 20px;
+}
